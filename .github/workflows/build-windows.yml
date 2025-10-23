@@ -175,7 +175,7 @@ jobs:
             **Build Details:**
             - Platform: Windows (x64)
             - Build Type: Release with Qt6 and LTO
-            - Date: $(date +'%Y-%m-%d')
+            - Date: ${{ env.DATE }}
 
       - name: Update LATEST_VERSION
         if: success()
