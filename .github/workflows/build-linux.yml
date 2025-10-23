@@ -188,7 +188,7 @@ jobs:
             - Platform: Linux (x86_64, x86_64_v3)
             - Format: AppImage + tar.zst packages
             - Build Type: Release with optimizations
-            - Date: $(date +'%Y-%m-%d')
+            - Date: ${{ env.DATE }}
 
       - name: Update LATEST_VERSION
         if: success()
